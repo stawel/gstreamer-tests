@@ -1,0 +1,350 @@
+Mon 22 Aug 2022 07:36:49 PM BST ............ Test: 91
+Setting pipeline to PAUSED ...
+
+(gst-launch-1.0:13507): GStreamer-CRITICAL **: 19:36:49.416: gst_debug_log_valist: assertion 'category != NULL' failed
+
+(gst-launch-1.0:13507): GStreamer-CRITICAL **: 19:36:49.416: gst_debug_log_valist: assertion 'category != NULL' failed
+
+(gst-launch-1.0:13507): GStreamer-CRITICAL **: 19:36:49.416: gst_debug_log_valist: assertion 'category != NULL' failed
+
+(gst-launch-1.0:13507): GStreamer-CRITICAL **: 19:36:49.416: gst_debug_log_valist: assertion 'category != NULL' failed
+Pipeline is PREROLLING ...
+WARNING: from element /GstPipeline:pipeline0/GstAutoAudioSink:autoaudiosink0: Could not open audio device for playback.
+Additional debug info:
+../subprojects/gst-plugins-good/sys/oss4/oss4-sink.c(515): gst_oss4_sink_open (): /GstOss4Sink:autoaudiosink0-actual-sink-oss4:
+system error: No such file or directory
+Got context from element 'souphttpsrc0': gst.soup.session=context, session=(GstSoupSession)NULL;
+0:00:00.116418176 13507   0x55bed11c00 DEBUG                 queue2 gstqueue2.c:568:gst_queue2_init:<GstQueue2@0x7f90042040> initialized queue's not_empty & not_full conditions
+0:00:00.116782872 13507   0x55bed11c00 LOG                   queue2 gstqueue2.c:1033:get_buffering_level:<queue2-0> Cur level bytes/time/rate-time/buffers 0/0:00:00.000000000/0:00:00.000000000/0
+0:00:00.116860574 13507   0x55bed11c00 DEBUG                 queue2 gstqueue2.c:1071:get_buffering_level:<queue2-0> buffering 1, level 0
+0:00:00.116893074 13507   0x55bed11c00 DEBUG                 queue2 gstqueue2.c:1210:update_buffering:<queue2-0> buffering 0 percent
+0:00:00.116924240 13507   0x55bed11c00 DEBUG                 queue2 gstqueue2.c:1148:gst_queue2_get_buffering_message:<queue2-0> Going to post buffering: 0%
+0:00:00.117472710 13507   0x55bed11c00 DEBUG                 queue2 gstqueue2.c:1184:gst_queue2_post_buffering:<queue2-0> could not post buffering message
+0:00:00.117627355 13507   0x55bed11c00 DEBUG                 queue2 gstqueue2.c:1148:gst_queue2_get_buffering_message:<queue2-0> Going to post buffering: 0%
+0:00:00.118219213 13507   0x55bed11c00 DEBUG                 queue2 gstqueue2.c:1184:gst_queue2_post_buffering:<queue2-0> could not post buffering message
+0:00:00.118607465 13507   0x55bed11c00 DEBUG                 queue2 gstqueue2.c:1300:update_in_rates:<queue2-0> rates: in 0.000000, time 0:00:00.000000000
+0:00:00.118968716 13507   0x55bed11c00 LOG                   queue2 gstqueue2.c:1033:get_buffering_level:<queue2-0> Cur level bytes/time/rate-time/buffers 0/0:00:00.000000000/0:00:00.000000000/0
+0:00:00.119270136 13507   0x55bed11c00 DEBUG                 queue2 gstqueue2.c:1071:get_buffering_level:<queue2-0> buffering 1, level 0
+0:00:00.119482595 13507   0x55bed11c00 DEBUG                 queue2 gstqueue2.c:1148:gst_queue2_get_buffering_message:<queue2-0> Going to post buffering: 0%
+0:00:00.119666721 13507   0x55bed11c00 DEBUG                 queue2 gstqueue2.c:1184:gst_queue2_post_buffering:<queue2-0> could not post buffering message
+0:00:00.119866365 13507   0x55bed11c00 DEBUG                 queue2 gstqueue2.c:1300:update_in_rates:<queue2-0> rates: in 0.000000, time 0:00:00.000000000
+0:00:00.120074786 13507   0x55bed11c00 LOG                   queue2 gstqueue2.c:1033:get_buffering_level:<queue2-0> Cur level bytes/time/rate-time/buffers 0/0:00:00.000000000/0:00:00.000000000/0
+0:00:00.120224154 13507   0x55bed11c00 DEBUG                 queue2 gstqueue2.c:1071:get_buffering_level:<queue2-0> buffering 1, level 0
+0:00:00.120360077 13507   0x55bed11c00 DEBUG                 queue2 gstqueue2.c:1148:gst_queue2_get_buffering_message:<queue2-0> Going to post buffering: 0%
+0:00:00.120507481 13507   0x55bed11c00 DEBUG                 queue2 gstqueue2.c:1184:gst_queue2_post_buffering:<queue2-0> could not post buffering message
+0:00:00.120666126 13507   0x55bed11c00 DEBUG                 queue2 gstqueue2.c:1300:update_in_rates:<queue2-0> rates: in 0.000000, time 0:00:00.000000000
+0:00:00.120822660 13507   0x55bed11c00 LOG                   queue2 gstqueue2.c:1033:get_buffering_level:<queue2-0> Cur level bytes/time/rate-time/buffers 0/0:00:00.000000000/0:00:00.000000000/0
+0:00:00.121002545 13507   0x55bed11c00 DEBUG                 queue2 gstqueue2.c:1071:get_buffering_level:<queue2-0> buffering 1, level 0
+0:00:00.121031748 13507   0x55bed11c00 DEBUG                 queue2 gstqueue2.c:1148:gst_queue2_get_buffering_message:<queue2-0> Going to post buffering: 0%
+0:00:00.121434036 13507   0x55bed11c00 DEBUG                 queue2 gstqueue2.c:1184:gst_queue2_post_buffering:<queue2-0> could not post buffering message
+0:00:00.121635921 13507   0x55bed11c00 DEBUG                 queue2 gstqueue2.c:1300:update_in_rates:<queue2-0> rates: in 0.000000, time 0:00:00.000000000
+0:00:00.121693920 13507   0x55bed11c00 LOG                   queue2 gstqueue2.c:1033:get_buffering_level:<queue2-0> Cur level bytes/time/rate-time/buffers 0/0:00:00.000000000/0:00:00.000000000/0
+0:00:00.122061727 13507   0x55bed11c00 DEBUG                 queue2 gstqueue2.c:1071:get_buffering_level:<queue2-0> buffering 1, level 0
+0:00:00.122216057 13507   0x55bed11c00 DEBUG                 queue2 gstqueue2.c:1148:gst_queue2_get_buffering_message:<queue2-0> Going to post buffering: 0%
+0:00:00.122382739 13507   0x55bed11c00 DEBUG                 queue2 gstqueue2.c:1184:gst_queue2_post_buffering:<queue2-0> could not post buffering message
+0:00:00.122620179 13507   0x55bed11c00 DEBUG                 queue2 gstqueue2.c:1300:update_in_rates:<queue2-0> rates: in 0.000000, time 0:00:00.000000000
+0:00:00.122811749 13507   0x55bed11c00 LOG                   queue2 gstqueue2.c:1033:get_buffering_level:<queue2-0> Cur level bytes/time/rate-time/buffers 0/0:00:00.000000000/0:00:00.000000000/0
+0:00:00.122953302 13507   0x55bed11c00 DEBUG                 queue2 gstqueue2.c:1071:get_buffering_level:<queue2-0> buffering 1, level 0
+0:00:00.123090540 13507   0x55bed11c00 DEBUG                 queue2 gstqueue2.c:1148:gst_queue2_get_buffering_message:<queue2-0> Going to post buffering: 0%
+0:00:00.123236888 13507   0x55bed11c00 DEBUG                 queue2 gstqueue2.c:1184:gst_queue2_post_buffering:<queue2-0> could not post buffering message
+0:00:00.123425459 13507   0x55bed11c00 DEBUG                 queue2 gstqueue2.c:1300:update_in_rates:<queue2-0> rates: in 0.000000, time 0:00:00.000000000
+0:00:00.123681287 13507   0x55bed11c00 LOG                   queue2 gstqueue2.c:1033:get_buffering_level:<queue2-0> Cur level bytes/time/rate-time/buffers 0/0:00:00.000000000/0:00:00.000000000/0
+0:00:00.123848746 13507   0x55bed11c00 DEBUG                 queue2 gstqueue2.c:1071:get_buffering_level:<queue2-0> buffering 1, level 0
+0:00:00.123996595 13507   0x55bed11c00 DEBUG                 queue2 gstqueue2.c:1148:gst_queue2_get_buffering_message:<queue2-0> Going to post buffering: 0%
+0:00:00.124208128 13507   0x55bed11c00 DEBUG                 queue2 gstqueue2.c:1184:gst_queue2_post_buffering:<queue2-0> could not post buffering message
+0:00:00.124410124 13507   0x55bed11c00 DEBUG                 queue2 gstqueue2.c:1300:update_in_rates:<queue2-0> rates: in 0.000000, time 0:00:00.000000000
+0:00:00.124569991 13507   0x55bed11c00 LOG                   queue2 gstqueue2.c:1033:get_buffering_level:<queue2-0> Cur level bytes/time/rate-time/buffers 0/0:00:00.000000000/0:00:00.000000000/0
+0:00:00.124600768 13507   0x55bed11c00 DEBUG                 queue2 gstqueue2.c:1071:get_buffering_level:<queue2-0> buffering 1, level 0
+0:00:00.124620656 13507   0x55bed11c00 DEBUG                 queue2 gstqueue2.c:1148:gst_queue2_get_buffering_message:<queue2-0> Going to post buffering: 0%
+0:00:00.124858337 13507   0x55bed11c00 DEBUG                 queue2 gstqueue2.c:1184:gst_queue2_post_buffering:<queue2-0> could not post buffering message
+0:00:00.125358141 13507   0x55bed11c00 DEBUG                 queue2 gstqueue2.c:732:init_ranges:<queue2-0> init queue ranges
+0:00:00.125414659 13507   0x55bed11c00 DEBUG                 queue2 gstqueue2.c:622:clean_ranges:<queue2-0> clean queue ranges
+0:00:00.125959314 13507   0x55bed11c00 DEBUG                 queue2 gstqueue2.c:674:add_range:<queue2-0> find range for 0
+0:00:00.126003369 13507   0x55bed11c00 DEBUG                 queue2 gstqueue2.c:649:find_range:<queue2-0> no range for 0
+0:00:00.126254882 13507   0x55bed11c00 DEBUG                 queue2 gstqueue2.c:686:add_range:<queue2-0> new range 0-0
+0:00:00.126396916 13507   0x55bed11c00 DEBUG                 queue2 gstqueue2.c:609:debug_ranges:<queue2-0> range [0-0] (rb [0-0]), reading 0 current range?   n  
+0:00:00.126544043 13507   0x55bed11c00 DEBUG                 queue2 gstqueue2.c:3683:gst_queue2_src_activate_push:<queue2-0> activating push mode
+0:00:00.127119291 13507   0x55bed11c00 DEBUG                 queue2 gstqueue2.c:3639:gst_queue2_sink_activate_mode:<queue2-0> activating push mode
+0:00:00.128783701 13507   0x55bed11c00 DEBUG                 queue2 gstqueue2.c:3694:gst_queue2_src_activate_push:<queue2-0> deactivating push mode
+0:00:00.128908661 13507   0x7f98008520 DEBUG                 queue2 gstqueue2.c:732:init_ranges:<queue2-0> init queue ranges
+0:00:00.129065510 13507   0x7f98008520 DEBUG                 queue2 gstqueue2.c:622:clean_ranges:<queue2-0> clean queue ranges
+0:00:00.129118342 13507   0x7f98008520 DEBUG                 queue2 gstqueue2.c:674:add_range:<queue2-0> find range for 0
+0:00:00.129163045 13507   0x7f98008520 DEBUG                 queue2 gstqueue2.c:649:find_range:<queue2-0> no range for 0
+0:00:00.129206526 13507   0x7f98008520 DEBUG                 queue2 gstqueue2.c:686:add_range:<queue2-0> new range 0-0
+0:00:00.129255747 13507   0x7f98008520 DEBUG                 queue2 gstqueue2.c:609:debug_ranges:<queue2-0> range [0-0] (rb [0-0]), reading 0 current range?   n  
+0:00:00.129324597 13507   0x7f98008520 LOG                   queue2 gstqueue2.c:1033:get_buffering_level:<queue2-0> Cur level bytes/time/rate-time/buffers 0/0:00:00.000000000/0:00:00.000000000/0
+0:00:00.129374670 13507   0x7f98008520 DEBUG                 queue2 gstqueue2.c:1071:get_buffering_level:<queue2-0> buffering 1, level 0
+0:00:00.129419058 13507   0x7f98008520 DEBUG                 queue2 gstqueue2.c:1148:gst_queue2_get_buffering_message:<queue2-0> Going to post buffering: 0%
+0:00:00.129513871 13507   0x7f98008520 DEBUG                 queue2 gstqueue2.c:1181:gst_queue2_post_buffering:<queue2-0> successfully posted 0% buffering message
+0:00:00.129690682 13507   0x55bed11c00 DEBUG                 queue2 gstqueue2.c:732:init_ranges:<queue2-0> init queue ranges
+0:00:00.129718274 13507   0x55bed11c00 DEBUG                 queue2 gstqueue2.c:622:clean_ranges:<queue2-0> clean queue ranges
+0:00:00.129954955 13507   0x55bed11c00 DEBUG                 queue2 gstqueue2.c:674:add_range:<queue2-0> find range for 0
+0:00:00.130079767 13507   0x55bed11c00 DEBUG                 queue2 gstqueue2.c:649:find_range:<queue2-0> no range for 0
+0:00:00.130204653 13507   0x55bed11c00 DEBUG                 queue2 gstqueue2.c:686:add_range:<queue2-0> new range 0-0
+0:00:00.130333058 13507   0x55bed11c00 DEBUG                 queue2 gstqueue2.c:609:debug_ranges:<queue2-0> range [0-0] (rb [0-0]), reading 0 current range?   n  
+0:00:00.130465778 13507   0x55bed11c00 DEBUG                 queue2 gstqueue2.c:3734:gst_queue2_src_activate_pull:<queue2-0> activating pull mode
+0:00:00.130593905 13507   0x55bed11c00 DEBUG                 queue2 gstqueue2.c:732:init_ranges:<queue2-0> init queue ranges
+0:00:00.130713884 13507   0x55bed11c00 DEBUG                 queue2 gstqueue2.c:622:clean_ranges:<queue2-0> clean queue ranges
+0:00:00.130836918 13507   0x55bed11c00 DEBUG                 queue2 gstqueue2.c:674:add_range:<queue2-0> find range for 0
+0:00:00.130958638 13507   0x55bed11c00 DEBUG                 queue2 gstqueue2.c:649:find_range:<queue2-0> no range for 0
+0:00:00.131082321 13507   0x55bed11c00 DEBUG                 queue2 gstqueue2.c:686:add_range:<queue2-0> new range 0-0
+0:00:00.131209244 13507   0x55bed11c00 DEBUG                 queue2 gstqueue2.c:609:debug_ranges:<queue2-0> range [0-0] (rb [0-0]), reading 0 current range?   n  
+0:00:00.131615069 13507   0x7f98008520 DEBUG                 queue2 gstqueue2.c:3363:gst_queue2_handle_src_query:<queue2-0> doing peer query
+0:00:00.131724826 13507   0x7f98008520 DEBUG                 queue2 gstqueue2.c:3368:gst_queue2_handle_src_query:<queue2-0> peer query success
+0:00:00.132080597 13507   0x55bed11c00 INFO                  queue2 gstqueue2.c:2394:gst_queue2_locked_enqueue: got caps: application/x-id3
+0:00:00.132124651 13507   0x55bed11c00 LOG                   queue2 gstqueue2.c:2397:gst_queue2_locked_enqueue: Dropping caps event, not using queue
+0:00:00.132555679 13507   0x7f98008640 DEBUG                 queue2 gstqueue2.c:1300:update_in_rates:<queue2-0> rates: in 0.000000, time 0:00:00.000000000
+0:00:00.132671714 13507   0x7f98008640 LOG                   queue2 gstqueue2.c:1033:get_buffering_level:<queue2-0> Cur level bytes/time/rate-time/buffers 0/0:00:00.000000000/0:00:00.000000000/0
+0:00:00.132713676 13507   0x7f98008640 DEBUG                 queue2 gstqueue2.c:1071:get_buffering_level:<queue2-0> buffering 1, level 0
+0:00:00.132757083 13507   0x7f98008640 DEBUG                 queue2 gstqueue2.c:1300:update_in_rates:<queue2-0> rates: in 0.000000, time 0:00:00.000000000
+0:00:00.132788619 13507   0x7f98008640 LOG                   queue2 gstqueue2.c:1033:get_buffering_level:<queue2-0> Cur level bytes/time/rate-time/buffers 0/0:00:00.000000000/0:00:00.000000000/0
+0:00:00.132808989 13507   0x7f98008640 DEBUG                 queue2 gstqueue2.c:1071:get_buffering_level:<queue2-0> buffering 1, level 0
+0:00:00.132859599 13507   0x7f98008640 DEBUG                 queue2 gstqueue2.c:1300:update_in_rates:<queue2-0> rates: in 0.000000, time 0:00:00.000000000
+0:00:00.132905932 13507   0x7f98008640 LOG                   queue2 gstqueue2.c:1033:get_buffering_level:<queue2-0> Cur level bytes/time/rate-time/buffers 0/0:00:00.000000000/0:00:00.000000000/0
+0:00:00.132931894 13507   0x7f98008640 DEBUG                 queue2 gstqueue2.c:1071:get_buffering_level:<queue2-0> buffering 1, level 0
+0:00:00.133081169 13507   0x7f98008640 DEBUG                 queue2 gstqueue2.c:1300:update_in_rates:<queue2-0> rates: in 0.000000, time 0:00:00.000000000
+0:00:00.133122835 13507   0x7f98008640 LOG                   queue2 gstqueue2.c:1033:get_buffering_level:<queue2-0> Cur level bytes/time/rate-time/buffers 0/0:00:00.000000000/0:00:00.000000000/0
+0:00:00.133146538 13507   0x7f98008640 DEBUG                 queue2 gstqueue2.c:1071:get_buffering_level:<queue2-0> buffering 1, level 0
+0:00:00.133344219 13507   0x55bed11c00 WARN                  queue2 gstqueue2.c:2444:gst_queue2_locked_enqueue:<queue2-0> custom-downstream-sticky event can't be added to temp file: custom-downstream-sticky event: 0x7f9801f2e0, time 99:99:99.999999999, seq-num 37, http-headers, uri=(string)http://localhost:8000/file_example_MP3_5MG.mp3, http-status-code=(uint)200, request-headers=(structure)"request-headers\,\ User-Agent\=\(string\)\"GStreamer\\\ souphttpsrc\\\ 1.21.0.1\\\ libsoup/2.74.0\"\,\ icy-metadata\=\(string\)1\,\ Accept-Encoding\=\(string\)identity\,\ Connection\=\(string\)Keep-Alive\;", response-headers=(structure)"response-headers\,\ Server\=\(string\)\"SimpleHTTP/0.6\\\ Python/2.7.18\"\,\ Date\=\(string\)\"Mon\\\,\\\ 22\\\ Aug\\\ 2022\\\ 18:36:49\\\ GMT\"\,\ Content-Type\=\(string\)audio/mpeg\,\ Content-Length\=\(string\)5289384\,\ Last-Modified\=\(string\)\"Mon\\\,\\\ 22\\\ Aug\\\ 2022\\\ 17:28:17\\\ GMT\"\;";
+0:00:00.135830001 13507   0x7f98008520 DEBUG                 queue2 gstqueue2.c:3579:gst_queue2_get_range:<queue2-0> Getting range: offset 0, length 4096
+0:00:00.136009331 13507   0x7f98008520 INFO                  queue2 gstqueue2.c:3555:gst_queue2_update_upstream_size:<queue2-0> upstream size: 5289384
+0:00:00.136086996 13507   0x7f98008520 DEBUG                 queue2 gstqueue2.c:1556:gst_queue2_create_read:<queue2-0> Reading 4096 bytes from 0
+0:00:00.136130662 13507   0x7f98008520 DEBUG                 queue2 gstqueue2.c:1420:gst_queue2_have_data:<queue2-0> looking for offset 0, len 4096
+0:00:00.136171865 13507   0x7f98008520 DEBUG                 queue2 gstqueue2.c:645:find_range:<queue2-0> found range for 0: [0-0]
+0:00:00.136211438 13507   0x7f98008520 INFO                  queue2 gstqueue2.c:1429:gst_queue2_have_data:<queue2-0> cur_level.bytes 0 (max 5242880)
+0:00:00.136253752 13507   0x7f98008520 DEBUG                 queue2 gstqueue2.c:1433:gst_queue2_have_data:<queue2-0> we have a range 0x7f90007380, offset 0, writing_pos 0
+0:00:00.136301436 13507   0x7f98008520 DEBUG                 queue2 gstqueue2.c:1443:gst_queue2_have_data:<queue2-0> Need more data (4096 bytes more)
+0:00:00.136343787 13507   0x7f98008520 DEBUG                 queue2 gstqueue2.c:1578:gst_queue2_create_read:<queue2-0> reading 0, writing 0, level 0, max 5242880
+0:00:00.136385990 13507   0x7f98008520 DEBUG                 queue2 gstqueue2.c:1606:gst_queue2_create_read:<queue2-0> update current position [0-0]
+0:00:00.136426582 13507   0x7f98008520 DEBUG                 queue2 gstqueue2.c:1354:update_cur_pos:<queue2-0> updating max_reading_pos from 0 to 0
+0:00:00.136486358 13507   0x7f98008520 DEBUG                 queue2 gstqueue2.c:1300:update_in_rates:<queue2-0> rates: in 0.000000, time 0:00:00.000000000
+0:00:00.136539894 13507   0x7f98008520 LOG                   queue2 gstqueue2.c:1033:get_buffering_level:<queue2-0> Cur level bytes/time/rate-time/buffers 0/0:00:00.000000000/0:00:00.000000000/0
+0:00:00.136583375 13507   0x7f98008520 DEBUG                 queue2 gstqueue2.c:1071:get_buffering_level:<queue2-0> buffering 1, level 0
+0:00:00.136621115 13507   0x7f98008520 DEBUG                 queue2 gstqueue2.c:1616:gst_queue2_create_read:<queue2-0> waiting for add
+0:00:00.136714113 13507   0x55bed11c00 DEBUG                 queue2 gstqueue2.c:674:add_range:<queue2-0> find range for 0
+0:00:00.136750186 13507   0x55bed11c00 DEBUG                 queue2 gstqueue2.c:645:find_range:<queue2-0> found range for 0: [0-0]
+0:00:00.136772815 13507   0x55bed11c00 DEBUG                 queue2 gstqueue2.c:677:add_range:<queue2-0> reusing range 0-0
+0:00:00.136840870 13507   0x55bed11c00 DEBUG                 queue2 gstqueue2.c:609:debug_ranges:<queue2-0> range [0-0] (rb [0-0]), reading 0 current range? **y**
+0:00:00.136879665 13507   0x55bed11c00 DEBUG                 queue2 gstqueue2.c:796:apply_segment:<queue2-0> configured SEGMENT time segment start=0:00:00.000000000, offset=0:00:00.000000000, stop=99:99:99.999999999, rate=1.000000, applied_rate=1.000000, flags=0x00, time=0:00:00.000000000, base=0:00:00.000000000, position 0:00:00.000000000, duration 0:00:00.005289384
+0:00:00.136915738 13507   0x55bed11c00 DEBUG                 queue2 gstqueue2.c:759:update_time_level:<queue2-0> sink 0:00:00.000000000, src 0:00:00.000000000
+0:00:00.137094401 13507   0x7f980086a0 DEBUG                 queue2 gstqueue2.c:1300:update_in_rates:<queue2-0> rates: in 0.000000, time 0:00:00.000000000
+0:00:00.137154419 13507   0x7f980086a0 LOG                   queue2 gstqueue2.c:1033:get_buffering_level:<queue2-0> Cur level bytes/time/rate-time/buffers 0/0:00:00.000000000/0:00:00.000000000/0
+0:00:00.137176715 13507   0x7f980086a0 DEBUG                 queue2 gstqueue2.c:1071:get_buffering_level:<queue2-0> buffering 1, level 0
+0:00:00.137214640 13507   0x7f980086a0 DEBUG                 queue2 gstqueue2.c:1300:update_in_rates:<queue2-0> rates: in 0.000000, time 0:00:00.000000000
+0:00:00.137260157 13507   0x7f980086a0 LOG                   queue2 gstqueue2.c:1033:get_buffering_level:<queue2-0> Cur level bytes/time/rate-time/buffers 0/0:00:00.000000000/0:00:00.000000000/0
+0:00:00.137283138 13507   0x7f980086a0 DEBUG                 queue2 gstqueue2.c:1071:get_buffering_level:<queue2-0> buffering 1, level 0
+0:00:00.137314564 13507   0x7f980086a0 DEBUG                 queue2 gstqueue2.c:1300:update_in_rates:<queue2-0> rates: in 0.000000, time 0:00:00.000000000
+0:00:00.137355285 13507   0x7f980086a0 LOG                   queue2 gstqueue2.c:1033:get_buffering_level:<queue2-0> Cur level bytes/time/rate-time/buffers 0/0:00:00.000000000/0:00:00.000000000/0
+0:00:00.137378970 13507   0x7f980086a0 DEBUG                 queue2 gstqueue2.c:1071:get_buffering_level:<queue2-0> buffering 1, level 0
+0:00:00.137409154 13507   0x7f980086a0 DEBUG                 queue2 gstqueue2.c:1300:update_in_rates:<queue2-0> rates: in 0.000000, time 0:00:00.000000000
+0:00:00.137452598 13507   0x7f980086a0 LOG                   queue2 gstqueue2.c:1033:get_buffering_level:<queue2-0> Cur level bytes/time/rate-time/buffers 0/0:00:00.000000000/0:00:00.000000000/0
+0:00:00.137476783 13507   0x7f980086a0 DEBUG                 queue2 gstqueue2.c:1071:get_buffering_level:<queue2-0> buffering 1, level 0
+0:00:00.137591577 13507   0x7f98008640 DEBUG                 queue2 gstqueue2.c:1300:update_in_rates:<queue2-0> rates: in 0.000000, time 0:00:00.000000000
+0:00:00.137656131 13507   0x7f98008640 LOG                   queue2 gstqueue2.c:1033:get_buffering_level:<queue2-0> Cur level bytes/time/rate-time/buffers 0/0:00:00.000000000/0:00:00.000000000/0
+0:00:00.137680075 13507   0x7f98008640 DEBUG                 queue2 gstqueue2.c:1071:get_buffering_level:<queue2-0> buffering 1, level 0
+0:00:00.137716833 13507   0x7f98008640 DEBUG                 queue2 gstqueue2.c:1300:update_in_rates:<queue2-0> rates: in 0.000000, time 0:00:00.000000000
+0:00:00.137794165 13507   0x7f98008640 LOG                   queue2 gstqueue2.c:1033:get_buffering_level:<queue2-0> Cur level bytes/time/rate-time/buffers 0/0:00:00.000000000/0:00:00.000000000/0
+0:00:00.137817164 13507   0x7f98008640 DEBUG                 queue2 gstqueue2.c:1071:get_buffering_level:<queue2-0> buffering 1, level 0
+0:00:00.137851349 13507   0x7f98008640 DEBUG                 queue2 gstqueue2.c:1300:update_in_rates:<queue2-0> rates: in 0.000000, time 0:00:00.000000000
+0:00:00.137901089 13507   0x7f98008640 LOG                   queue2 gstqueue2.c:1033:get_buffering_level:<queue2-0> Cur level bytes/time/rate-time/buffers 0/0:00:00.000000000/0:00:00.000000000/0
+0:00:00.137923644 13507   0x7f98008640 DEBUG                 queue2 gstqueue2.c:1071:get_buffering_level:<queue2-0> buffering 1, level 0
+0:00:00.137956476 13507   0x7f98008640 DEBUG                 queue2 gstqueue2.c:1300:update_in_rates:<queue2-0> rates: in 0.000000, time 0:00:00.000000000
+0:00:00.137983013 13507   0x7f98008640 LOG                   queue2 gstqueue2.c:1033:get_buffering_level:<queue2-0> Cur level bytes/time/rate-time/buffers 0/0:00:00.000000000/0:00:00.000000000/0
+0:00:00.138005068 13507   0x7f98008640 DEBUG                 queue2 gstqueue2.c:1071:get_buffering_level:<queue2-0> buffering 1, level 0
+0:00:00.138041327 13507   0x55bed11c00 DEBUG                 queue2 gstqueue2.c:2874:gst_queue2_is_filled:<queue2-0> max bytes 5242880, rb size 20971520, cur bytes 0
+0:00:00.138106936 13507   0x55bed11c00 DEBUG                 queue2 gstqueue2.c:905:apply_buffer:<queue2-0> position updated to 0:00:00.000000000
+0:00:00.138137806 13507   0x55bed11c00 DEBUG                 queue2 gstqueue2.c:759:update_time_level:<queue2-0> sink 0:00:00.000000000, src 0:00:00.000000000
+0:00:00.138163935 13507   0x55bed11c00 DEBUG                 queue2 gstqueue2.c:1300:update_in_rates:<queue2-0> rates: in 0.000000, time 0:00:00.000000000
+0:00:00.138193694 13507   0x55bed11c00 DEBUG                 queue2 gstqueue2.c:1968:gst_queue2_create_write:<queue2-0> Writing 4096 bytes to 0
+0:00:00.138216842 13507   0x55bed11c00 INFO                  queue2 gstqueue2.c:2107:gst_queue2_create_write:<queue2-0> writing 4096 bytes to range [0-0] (rb wpos 0)
+0:00:00.138255748 13507   0x55bed11c00 INFO                  queue2 gstqueue2.c:2182:gst_queue2_create_write:<queue2-0> wrote 4096 bytes to 0 (0 bytes remaining to write)
+0:00:00.138281840 13507   0x55bed11c00 DEBUG                 queue2 gstqueue2.c:1300:update_in_rates:<queue2-0> rates: in 0.000000, time 0:00:00.000000000
+0:00:00.138308469 13507   0x55bed11c00 LOG                   queue2 gstqueue2.c:1033:get_buffering_level:<queue2-0> Cur level bytes/time/rate-time/buffers 4096/0:00:00.000000000/0:00:00.000000000/0
+0:00:00.138329358 13507   0x55bed11c00 DEBUG                 queue2 gstqueue2.c:1071:get_buffering_level:<queue2-0> buffering 1, level 781
+0:00:00.138350042 13507   0x55bed11c00 INFO                  queue2 gstqueue2.c:2231:gst_queue2_create_write:<queue2-0> cur_level.bytes 4096 (max 5242880)
+0:00:00.138382116 13507   0x55bed11c00 DEBUG                 queue2 gstqueue2.c:1300:update_in_rates:<queue2-0> rates: in 0.000000, time 0:00:00.000000000
+0:00:00.138408819 13507   0x55bed11c00 LOG                   queue2 gstqueue2.c:1033:get_buffering_level:<queue2-0> Cur level bytes/time/rate-time/buffers 4096/0:00:00.000000000/0:00:00.000000000/0
+0:00:00.138429689 13507   0x55bed11c00 DEBUG                 queue2 gstqueue2.c:1071:get_buffering_level:<queue2-0> buffering 1, level 781
+0:00:00.138495188 13507   0x7f98008640 DEBUG                 queue2 gstqueue2.c:1300:update_in_rates:<queue2-0> rates: in 0.000000, time 0:00:00.000000000
+0:00:00.138529668 13507   0x7f98008640 LOG                   queue2 gstqueue2.c:1033:get_buffering_level:<queue2-0> Cur level bytes/time/rate-time/buffers 4096/0:00:00.000000000/0:00:00.000000000/0
+0:00:00.138551520 13507   0x7f98008640 DEBUG                 queue2 gstqueue2.c:1071:get_buffering_level:<queue2-0> buffering 1, level 781
+0:00:00.138584130 13507   0x7f98008640 DEBUG                 queue2 gstqueue2.c:1300:update_in_rates:<queue2-0> rates: in 0.000000, time 0:00:00.000000000
+0:00:00.138610926 13507   0x7f98008640 LOG                   queue2 gstqueue2.c:1033:get_buffering_level:<queue2-0> Cur level bytes/time/rate-time/buffers 4096/0:00:00.000000000/0:00:00.000000000/0
+0:00:00.138632574 13507   0x7f98008640 DEBUG                 queue2 gstqueue2.c:1071:get_buffering_level:<queue2-0> buffering 1, level 781
+0:00:00.138664369 13507   0x7f98008640 DEBUG                 queue2 gstqueue2.c:1300:update_in_rates:<queue2-0> rates: in 0.000000, time 0:00:00.000000000
+0:00:00.138692406 13507   0x7f98008640 LOG                   queue2 gstqueue2.c:1033:get_buffering_level:<queue2-0> Cur level bytes/time/rate-time/buffers 4096/0:00:00.000000000/0:00:00.000000000/0
+0:00:00.138713535 13507   0x7f98008640 DEBUG                 queue2 gstqueue2.c:1071:get_buffering_level:<queue2-0> buffering 1, level 781
+0:00:00.138744146 13507   0x7f98008640 DEBUG                 queue2 gstqueue2.c:1300:update_in_rates:<queue2-0> rates: in 0.000000, time 0:00:00.000000000
+0:00:00.138770089 13507   0x7f98008640 LOG                   queue2 gstqueue2.c:1033:get_buffering_level:<queue2-0> Cur level bytes/time/rate-time/buffers 4096/0:00:00.000000000/0:00:00.000000000/0
+0:00:00.138791441 13507   0x7f98008640 DEBUG                 queue2 gstqueue2.c:1071:get_buffering_level:<queue2-0> buffering 1, level 781
+0:00:00.138821237 13507   0x55bed11c00 DEBUG                 queue2 gstqueue2.c:2813:gst_queue2_handle_sink_query:<queue2-0> refusing query, we are not using the queue or we are posting buffering messages
+0:00:00.138868865 13507   0x7f98008520 DEBUG                 queue2 gstqueue2.c:1420:gst_queue2_have_data:<queue2-0> looking for offset 0, len 4096
+0:00:00.138925623 13507   0x7f98008520 DEBUG                 queue2 gstqueue2.c:645:find_range:<queue2-0> found range for 0: [0-4096]
+0:00:00.139152452 13507   0x7f98008520 INFO                  queue2 gstqueue2.c:1429:gst_queue2_have_data:<queue2-0> cur_level.bytes 4096 (max 5242880)
+0:00:00.139193970 13507   0x7f98008520 DEBUG                 queue2 gstqueue2.c:1433:gst_queue2_have_data:<queue2-0> we have a range 0x7f90007380, offset 0, writing_pos 4096
+0:00:00.139233024 13507   0x7f98008520 LOG                   queue2 gstqueue2.c:1490:gst_queue2_read_data_at_offset:<queue2-0> Reading 4096 bytes from offset 0
+0:00:00.139272875 13507   0x7f98008520 LOG                   queue2 gstqueue2.c:1499:gst_queue2_read_data_at_offset:<queue2-0> read 4096 bytes
+0:00:00.139311078 13507   0x7f98008520 DEBUG                 queue2 gstqueue2.c:1354:update_cur_pos:<queue2-0> updating max_reading_pos from 0 to 4096
+0:00:00.139348781 13507   0x7f98008520 DEBUG                 queue2 gstqueue2.c:1666:gst_queue2_create_read:<queue2-0> 0 bytes left to read
+0:00:00.139402780 13507   0x55bed11c00 DEBUG                 queue2 gstqueue2.c:2874:gst_queue2_is_filled:<queue2-0> max bytes 5242880, rb size 20971520, cur bytes 0
+0:00:00.139429780 13507   0x55bed11c00 DEBUG                 queue2 gstqueue2.c:905:apply_buffer:<queue2-0> position updated to 0:00:00.000000000
+0:00:00.142977429 13507   0x55bed11c00 DEBUG                 queue2 gstqueue2.c:759:update_time_level:<queue2-0> sink 0:00:00.000000000, src 0:00:00.000000000
+0:00:00.143102797 13507   0x55bed11c00 DEBUG                 queue2 gstqueue2.c:1300:update_in_rates:<queue2-0> rates: in 0.000000, time 0:00:00.000000000
+0:00:00.143154204 13507   0x55bed11c00 DEBUG                 queue2 gstqueue2.c:1968:gst_queue2_create_write:<queue2-0> Writing 4096 bytes to 4096
+0:00:00.143185740 13507   0x55bed11c00 INFO                  queue2 gstqueue2.c:2107:gst_queue2_create_write:<queue2-0> writing 4096 bytes to range [0-4096] (rb wpos 4096)
+0:00:00.143276627 13507   0x55bed11c00 INFO                  queue2 gstqueue2.c:2182:gst_queue2_create_write:<queue2-0> wrote 4096 bytes to 4096 (0 bytes remaining to write)
+0:00:00.143314737 13507   0x55bed11c00 DEBUG                 queue2 gstqueue2.c:1300:update_in_rates:<queue2-0> rates: in 0.000000, time 0:00:00.000000000
+0:00:00.143352533 13507   0x55bed11c00 LOG                   queue2 gstqueue2.c:1033:get_buffering_level:<queue2-0> Cur level bytes/time/rate-time/buffers 4096/0:00:00.000000000/0:00:00.000000000/0
+0:00:00.143377718 13507   0x55bed11c00 DEBUG                 queue2 gstqueue2.c:1071:get_buffering_level:<queue2-0> buffering 1, level 781
+0:00:00.143397254 13507   0x55bed11c00 INFO                  queue2 gstqueue2.c:2231:gst_queue2_create_write:<queue2-0> cur_level.bytes 4096 (max 5242880)
+0:00:00.143426365 13507   0x55bed11c00 DEBUG                 queue2 gstqueue2.c:1300:update_in_rates:<queue2-0> rates: in 0.000000, time 0:00:00.000000000
+0:00:00.143451457 13507   0x55bed11c00 LOG                   queue2 gstqueue2.c:1033:get_buffering_level:<queue2-0> Cur level bytes/time/rate-time/buffers 4096/0:00:00.000000000/0:00:00.000000000/0
+0:00:00.143471012 13507   0x55bed11c00 DEBUG                 queue2 gstqueue2.c:1071:get_buffering_level:<queue2-0> buffering 1, level 781
+0:00:00.144079185 13507   0x55bed11c00 DEBUG                 queue2 gstqueue2.c:2874:gst_queue2_is_filled:<queue2-0> max bytes 5242880, rb size 20971520, cur bytes 4096
+0:00:00.144193182 13507   0x55bed11c00 DEBUG                 queue2 gstqueue2.c:905:apply_buffer:<queue2-0> position updated to 0:00:00.000000000
+0:00:00.144229774 13507   0x55bed11c00 DEBUG                 queue2 gstqueue2.c:759:update_time_level:<queue2-0> sink 0:00:00.000000000, src 0:00:00.000000000
+0:00:00.144277310 13507   0x55bed11c00 DEBUG                 queue2 gstqueue2.c:1300:update_in_rates:<queue2-0> rates: in 0.000000, time 0:00:00.000000000
+0:00:00.144310661 13507   0x55bed11c00 DEBUG                 queue2 gstqueue2.c:1968:gst_queue2_create_write:<queue2-0> Writing 8192 bytes to 8192
+0:00:00.144337365 13507   0x55bed11c00 INFO                  queue2 gstqueue2.c:2107:gst_queue2_create_write:<queue2-0> writing 8192 bytes to range [0-8192] (rb wpos 8192)
+0:00:00.144397437 13507   0x55bed11c00 INFO                  queue2 gstqueue2.c:2182:gst_queue2_create_write:<queue2-0> wrote 8192 bytes to 8192 (0 bytes remaining to write)
+0:00:00.144431640 13507   0x55bed11c00 DEBUG                 queue2 gstqueue2.c:1300:update_in_rates:<queue2-0> rates: in 0.000000, time 0:00:00.000000000
+0:00:00.144462881 13507   0x55bed11c00 LOG                   queue2 gstqueue2.c:1033:get_buffering_level:<queue2-0> Cur level bytes/time/rate-time/buffers 12288/0:00:00.000000000/0:00:00.000000000/0
+0:00:00.144485436 13507   0x55bed11c00 DEBUG                 queue2 gstqueue2.c:1071:get_buffering_level:<queue2-0> buffering 1, level 2343
+0:00:00.144511435 13507   0x55bed11c00 INFO                  queue2 gstqueue2.c:2231:gst_queue2_create_write:<queue2-0> cur_level.bytes 12288 (max 5242880)
+0:00:00.144540453 13507   0x55bed11c00 DEBUG                 queue2 gstqueue2.c:1300:update_in_rates:<queue2-0> rates: in 0.000000, time 0:00:00.000000000
+0:00:00.144611248 13507   0x55bed11c00 LOG                   queue2 gstqueue2.c:1033:get_buffering_level:<queue2-0> Cur level bytes/time/rate-time/buffers 12288/0:00:00.000000000/0:00:00.000000000/0
+0:00:00.144639618 13507   0x55bed11c00 DEBUG                 queue2 gstqueue2.c:1071:get_buffering_level:<queue2-0> buffering 1, level 2343
+0:00:00.144791096 13507   0x55bed11c00 DEBUG                 queue2 gstqueue2.c:2813:gst_queue2_handle_sink_query:<queue2-0> refusing query, we are not using the queue or we are posting buffering messages
+0:00:00.145565543 13507   0x55bed11c00 DEBUG                 queue2 gstqueue2.c:2874:gst_queue2_is_filled:<queue2-0> max bytes 5242880, rb size 20971520, cur bytes 12288
+0:00:00.145701559 13507   0x55bed11c00 DEBUG                 queue2 gstqueue2.c:905:apply_buffer:<queue2-0> position updated to 0:00:00.000000000
+0:00:00.145805057 13507   0x55bed11c00 DEBUG                 queue2 gstqueue2.c:759:update_time_level:<queue2-0> sink 0:00:00.000000000, src 0:00:00.000000000
+0:00:00.145843130 13507   0x55bed11c00 DEBUG                 queue2 gstqueue2.c:1300:update_in_rates:<queue2-0> rates: in 0.000000, time 0:00:00.000000000
+0:00:00.145873518 13507   0x55bed11c00 DEBUG                 queue2 gstqueue2.c:1968:gst_queue2_create_write:<queue2-0> Writing 16384 bytes to 16384
+0:00:00.145898129 13507   0x55bed11c00 INFO                  queue2 gstqueue2.c:2107:gst_queue2_create_write:<queue2-0> writing 16384 bytes to range [0-16384] (rb wpos 16384)
+0:00:00.145959202 13507   0x55bed11c00 INFO                  queue2 gstqueue2.c:2182:gst_queue2_create_write:<queue2-0> wrote 16384 bytes to 16384 (0 bytes remaining to write)
+0:00:00.145987572 13507   0x55bed11c00 DEBUG                 queue2 gstqueue2.c:1300:update_in_rates:<queue2-0> rates: in 0.000000, time 0:00:00.000000000
+0:00:00.146015608 13507   0x55bed11c00 LOG                   queue2 gstqueue2.c:1033:get_buffering_level:<queue2-0> Cur level bytes/time/rate-time/buffers 28672/0:00:00.000000000/0:00:00.000000000/0
+0:00:00.146039200 13507   0x55bed11c00 DEBUG                 queue2 gstqueue2.c:1071:get_buffering_level:<queue2-0> buffering 1, level 5468
+0:00:00.146061403 13507   0x55bed11c00 INFO                  queue2 gstqueue2.c:2231:gst_queue2_create_write:<queue2-0> cur_level.bytes 28672 (max 5242880)
+0:00:00.146089181 13507   0x55bed11c00 DEBUG                 queue2 gstqueue2.c:1300:update_in_rates:<queue2-0> rates: in 0.000000, time 0:00:00.000000000
+0:00:00.146116643 13507   0x55bed11c00 LOG                   queue2 gstqueue2.c:1033:get_buffering_level:<queue2-0> Cur level bytes/time/rate-time/buffers 28672/0:00:00.000000000/0:00:00.000000000/0
+0:00:00.146137661 13507   0x55bed11c00 DEBUG                 queue2 gstqueue2.c:1071:get_buffering_level:<queue2-0> buffering 1, level 5468
+0:00:00.146672576 13507   0x55bed11c00 DEBUG                 queue2 gstqueue2.c:2874:gst_queue2_is_filled:<queue2-0> max bytes 5242880, rb size 20971520, cur bytes 28672
+0:00:00.146726575 13507   0x55bed11c00 DEBUG                 queue2 gstqueue2.c:905:apply_buffer:<queue2-0> position updated to 0:00:00.000000000
+0:00:00.146756260 13507   0x55bed11c00 DEBUG                 queue2 gstqueue2.c:759:update_time_level:<queue2-0> sink 0:00:00.000000000, src 0:00:00.000000000
+0:00:00.146792796 13507   0x55bed11c00 DEBUG                 queue2 gstqueue2.c:1300:update_in_rates:<queue2-0> rates: in 0.000000, time 0:00:00.000000000
+0:00:00.146819906 13507   0x55bed11c00 DEBUG                 queue2 gstqueue2.c:1968:gst_queue2_create_write:<queue2-0> Writing 32768 bytes to 32768
+0:00:00.146844684 13507   0x55bed11c00 INFO                  queue2 gstqueue2.c:2107:gst_queue2_create_write:<queue2-0> writing 32768 bytes to range [0-32768] (rb wpos 32768)
+0:00:00.146945163 13507   0x55bed11c00 INFO                  queue2 gstqueue2.c:2182:gst_queue2_create_write:<queue2-0> wrote 32768 bytes to 32768 (0 bytes remaining to write)
+0:00:00.146980773 13507   0x55bed11c00 DEBUG                 queue2 gstqueue2.c:1300:update_in_rates:<queue2-0> rates: in 0.000000, time 0:00:00.000000000
+0:00:00.147010125 13507   0x55bed11c00 LOG                   queue2 gstqueue2.c:1033:get_buffering_level:<queue2-0> Cur level bytes/time/rate-time/buffers 61440/0:00:00.000000000/0:00:00.000000000/0
+0:00:00.147032698 13507   0x55bed11c00 DEBUG                 queue2 gstqueue2.c:1071:get_buffering_level:<queue2-0> buffering 1, level 11718
+0:00:00.147053605 13507   0x55bed11c00 DEBUG                 queue2 gstqueue2.c:1210:update_buffering:<queue2-0> buffering 1 percent
+0:00:00.147076494 13507   0x55bed11c00 DEBUG                 queue2 gstqueue2.c:1148:gst_queue2_get_buffering_message:<queue2-0> Going to post buffering: 1%
+0:00:00.147186973 13507   0x55bed11c00 DEBUG                 queue2 gstqueue2.c:2222:gst_queue2_create_write:<queue2-0> successfully posted 1% buffering message
+0:00:00.147219583 13507   0x55bed11c00 INFO                  queue2 gstqueue2.c:2231:gst_queue2_create_write:<queue2-0> cur_level.bytes 61440 (max 5242880)
+0:00:00.147255175 13507   0x55bed11c00 DEBUG                 queue2 gstqueue2.c:1300:update_in_rates:<queue2-0> rates: in 0.000000, time 0:00:00.000000000
+0:00:00.147287434 13507   0x55bed11c00 LOG                   queue2 gstqueue2.c:1033:get_buffering_level:<queue2-0> Cur level bytes/time/rate-time/buffers 61440/0:00:00.000000000/0:00:00.000000000/0
+0:00:00.147310878 13507   0x55bed11c00 DEBUG                 queue2 gstqueue2.c:1071:get_buffering_level:<queue2-0> buffering 1, level 11718
+0:00:00.147813442 13507   0x55bed11c00 DEBUG                 queue2 gstqueue2.c:2874:gst_queue2_is_filled:<queue2-0> max bytes 5242880, rb size 20971520, cur bytes 61440
+0:00:00.147883181 13507   0x55bed11c00 DEBUG                 queue2 gstqueue2.c:905:apply_buffer:<queue2-0> position updated to 0:00:00.000000000
+0:00:00.147915347 13507   0x55bed11c00 DEBUG                 queue2 gstqueue2.c:759:update_time_level:<queue2-0> sink 0:00:00.000000000, src 0:00:00.000000000
+0:00:00.147950457 13507   0x55bed11c00 DEBUG                 queue2 gstqueue2.c:1300:update_in_rates:<queue2-0> rates: in 0.000000, time 0:00:00.000000000
+0:00:00.147979475 13507   0x55bed11c00 DEBUG                 queue2 gstqueue2.c:1968:gst_queue2_create_write:<queue2-0> Writing 8192 bytes to 65536
+0:00:00.148003067 13507   0x55bed11c00 INFO                  queue2 gstqueue2.c:2107:gst_queue2_create_write:<queue2-0> writing 8192 bytes to range [0-65536] (rb wpos 65536)
+0:00:00.148078029 13507   0x55bed11c00 INFO                  queue2 gstqueue2.c:2182:gst_queue2_create_write:<queue2-0> wrote 8192 bytes to 65536 (0 bytes remaining to write)
+0:00:00.148114435 13507   0x55bed11c00 DEBUG                 queue2 gstqueue2.c:1300:update_in_rates:<queue2-0> rates: in 0.000000, time 0:00:00.000000000
+0:00:00.148144842 13507   0x55bed11c00 LOG                   queue2 gstqueue2.c:1033:get_buffering_level:<queue2-0> Cur level bytes/time/rate-time/buffers 69632/0:00:00.000000000/0:00:00.000000000/0
+0:00:00.148168342 13507   0x55bed11c00 DEBUG                 queue2 gstqueue2.c:1071:get_buffering_level:<queue2-0> buffering 1, level 13281
+0:00:00.148191693 13507   0x55bed11c00 INFO                  queue2 gstqueue2.c:2231:gst_queue2_create_write:<queue2-0> cur_level.bytes 69632 (max 5242880)
+0:00:00.148224155 13507   0x55bed11c00 DEBUG                 queue2 gstqueue2.c:1300:update_in_rates:<queue2-0> rates: in 0.000000, time 0:00:00.000000000
+0:00:00.148253877 13507   0x55bed11c00 LOG                   queue2 gstqueue2.c:1033:get_buffering_level:<queue2-0> Cur level bytes/time/rate-time/buffers 69632/0:00:00.000000000/0:00:00.000000000/0
+0:00:00.148274988 13507   0x55bed11c00 DEBUG                 queue2 gstqueue2.c:1071:get_buffering_level:<queue2-0> buffering 1, level 13281
+0:00:00.148829051 13507   0x55bed11c00 DEBUG                 queue2 gstqueue2.c:2874:gst_queue2_is_filled:<queue2-0> max bytes 5242880, rb size 20971520, cur bytes 69632
+0:00:00.148890846 13507   0x55bed11c00 DEBUG                 queue2 gstqueue2.c:905:apply_buffer:<queue2-0> position updated to 0:00:00.000000000
+0:00:00.148921475 13507   0x55bed11c00 DEBUG                 queue2 gstqueue2.c:759:update_time_level:<queue2-0> sink 0:00:00.000000000, src 0:00:00.000000000
+0:00:00.148999417 13507   0x55bed11c00 DEBUG                 queue2 gstqueue2.c:1300:update_in_rates:<queue2-0> rates: in 0.000000, time 0:00:00.000000000
+0:00:00.149035009 13507   0x55bed11c00 DEBUG                 queue2 gstqueue2.c:1968:gst_queue2_create_write:<queue2-0> Writing 65536 bytes to 73728
+0:00:00.149059898 13507   0x55bed11c00 INFO                  queue2 gstqueue2.c:2107:gst_queue2_create_write:<queue2-0> writing 65536 bytes to range [0-73728] (rb wpos 73728)
+0:00:00.149281449 13507   0x55bed11c00 INFO                  queue2 gstqueue2.c:2182:gst_queue2_create_write:<queue2-0> wrote 65536 bytes to 73728 (0 bytes remaining to write)
+0:00:00.149337003 13507   0x55bed11c00 DEBUG                 queue2 gstqueue2.c:1300:update_in_rates:<queue2-0> rates: in 0.000000, time 0:00:00.000000000
+0:00:00.149370299 13507   0x55bed11c00 LOG                   queue2 gstqueue2.c:1033:get_buffering_level:<queue2-0> Cur level bytes/time/rate-time/buffers 135168/0:00:00.000000000/0:00:00.000000000/0
+0:00:00.149394261 13507   0x55bed11c00 DEBUG                 queue2 gstqueue2.c:1071:get_buffering_level:<queue2-0> buffering 1, level 25781
+0:00:00.149415353 13507   0x55bed11c00 DEBUG                 queue2 gstqueue2.c:1210:update_buffering:<queue2-0> buffering 2 percent
+0:00:00.149436853 13507   0x55bed11c00 DEBUG                 queue2 gstqueue2.c:1148:gst_queue2_get_buffering_message:<queue2-0> Going to post buffering: 2%
+0:00:00.149507240 13507   0x55bed11c00 DEBUG                 queue2 gstqueue2.c:2222:gst_queue2_create_write:<queue2-0> successfully posted 2% buffering message
+0:00:00.149535906 13507   0x55bed11c00 INFO                  queue2 gstqueue2.c:2231:gst_queue2_create_write:<queue2-0> cur_level.bytes 135168 (max 5242880)
+0:00:00.149566165 13507   0x55bed11c00 DEBUG                 queue2 gstqueue2.c:1300:update_in_rates:<queue2-0> rates: in 0.000000, time 0:00:00.000000000
+0:00:00.149596794 13507   0x55bed11c00 LOG                   queue2 gstqueue2.c:1033:get_buffering_level:<queue2-0> Cur level bytes/time/rate-time/buffers 135168/0:00:00.000000000/0:00:00.000000000/0
+0:00:00.149619108 13507   0x55bed11c00 DEBUG                 queue2 gstqueue2.c:1071:get_buffering_level:<queue2-0> buffering 1, level 25781
+0:00:00.150695198 13507   0x55bed11c00 DEBUG                 queue2 gstqueue2.c:2874:gst_queue2_is_filled:<queue2-0> max bytes 5242880, rb size 20971520, cur bytes 135168
+0:00:00.150766566 13507   0x55bed11c00 DEBUG                 queue2 gstqueue2.c:905:apply_buffer:<queue2-0> position updated to 0:00:00.000000000
+0:00:00.150800547 13507   0x55bed11c00 DEBUG                 queue2 gstqueue2.c:759:update_time_level:<queue2-0> sink 0:00:00.000000000, src 0:00:00.000000000
+0:00:00.150835935 13507   0x55bed11c00 DEBUG                 queue2 gstqueue2.c:1300:update_in_rates:<queue2-0> rates: in 0.000000, time 0:00:00.000000000
+0:00:00.150872342 13507   0x55bed11c00 DEBUG                 queue2 gstqueue2.c:1968:gst_queue2_create_write:<queue2-0> Writing 65536 bytes to 139264
+0:00:00.150898897 13507   0x55bed11c00 INFO                  queue2 gstqueue2.c:2107:gst_queue2_create_write:<queue2-0> writing 65536 bytes to range [0-139264] (rb wpos 139264)
+0:00:00.151093856 13507   0x55bed11c00 INFO                  queue2 gstqueue2.c:2182:gst_queue2_create_write:<queue2-0> wrote 65536 bytes to 139264 (0 bytes remaining to write)
+0:00:00.151155781 13507   0x55bed11c00 DEBUG                 queue2 gstqueue2.c:1300:update_in_rates:<queue2-0> rates: in 0.000000, time 0:00:00.000000000
+0:00:00.151192224 13507   0x55bed11c00 LOG                   queue2 gstqueue2.c:1033:get_buffering_level:<queue2-0> Cur level bytes/time/rate-time/buffers 200704/0:00:00.000000000/0:00:00.000000000/0
+0:00:00.151217742 13507   0x55bed11c00 DEBUG                 queue2 gstqueue2.c:1071:get_buffering_level:<queue2-0> buffering 1, level 38281
+0:00:00.151239186 13507   0x55bed11c00 DEBUG                 queue2 gstqueue2.c:1210:update_buffering:<queue2-0> buffering 3 percent
+0:00:00.151263204 13507   0x55bed11c00 DEBUG                 queue2 gstqueue2.c:1148:gst_queue2_get_buffering_message:<queue2-0> Going to post buffering: 3%
+0:00:00.151355240 13507   0x55bed11c00 DEBUG                 queue2 gstqueue2.c:2222:gst_queue2_create_write:<queue2-0> successfully posted 3% buffering message
+0:00:00.166599243 13507   0x55bed11c00 INFO                  queue2 gstqueue2.c:2231:gst_queue2_create_write:<queue2-0> cur_level.bytes 200704 (max 5242880)
+0:00:00.166679000 13507   0x55bed11c00 DEBUG                 queue2 gstqueue2.c:1300:update_in_rates:<queue2-0> rates: in 0.000000, time 0:00:00.000000000
+0:00:00.166714889 13507   0x55bed11c00 LOG                   queue2 gstqueue2.c:1033:get_buffering_level:<queue2-0> Cur level bytes/time/rate-time/buffers 200704/0:00:00.000000000/0:00:00.000000000/0
+0:00:00.166743018 13507   0x55bed11c00 DEBUG                 queue2 gstqueue2.c:1071:get_buffering_level:<queue2-0> buffering 1, level 38281
+0:00:00.167014475 13507   0x55bed11c00 DEBUG                 queue2 gstqueue2.c:2813:gst_queue2_handle_sink_query:<queue2-0> refusing query, we are not using the queue or we are posting buffering messages
+0:00:00.171095892 13507   0x7f980221e0 DEBUG                 queue2 gstqueue2.c:3363:gst_queue2_handle_src_query:<queue2-0> doing peer query
+0:00:00.171294573 13507   0x7f980221e0 DEBUG                 queue2 gstqueue2.c:3368:gst_queue2_handle_src_query:<queue2-0> peer query success
+0:00:00.171422718 13507   0x7f980221e0 DEBUG                 queue2 gstqueue2.c:3579:gst_queue2_get_range:<queue2-0> Getting range: offset 0, length 4096
+0:00:00.171543308 13507   0x7f980221e0 DEBUG                 queue2 gstqueue2.c:1556:gst_queue2_create_read:<queue2-0> Reading 4096 bytes from 0
+0:00:00.171574512 13507   0x7f980221e0 DEBUG                 queue2 gstqueue2.c:1420:gst_queue2_have_data:<queue2-0> looking for offset 0, len 4096
+0:00:00.171603659 13507   0x7f980221e0 DEBUG                 queue2 gstqueue2.c:645:find_range:<queue2-0> found range for 0: [0-204800]
+0:00:00.171629844 13507   0x7f980221e0 INFO                  queue2 gstqueue2.c:1429:gst_queue2_have_data:<queue2-0> cur_level.bytes 200704 (max 5242880)
+0:00:00.171666102 13507   0x7f980221e0 DEBUG                 queue2 gstqueue2.c:1433:gst_queue2_have_data:<queue2-0> we have a range 0x7f90007380, offset 0, writing_pos 204800
+0:00:00.171690694 13507   0x7f980221e0 LOG                   queue2 gstqueue2.c:1490:gst_queue2_read_data_at_offset:<queue2-0> Reading 4096 bytes from offset 0
+0:00:00.171729342 13507   0x7f980221e0 LOG                   queue2 gstqueue2.c:1499:gst_queue2_read_data_at_offset:<queue2-0> read 4096 bytes
+0:00:00.171752878 13507   0x7f980221e0 DEBUG                 queue2 gstqueue2.c:1354:update_cur_pos:<queue2-0> updating max_reading_pos from 4096 to 4096
+handling interrupt.
+0:00:00.171777711 13507   0x7f980221e0 DEBUG                 queue2 gstqueue2.c:1666:gst_queue2_create_read:<queue2-0> 0 bytes left to read
+Interrupt: Stopping pipeline ...
+Setting pipeline to NULL ...
+0:00:00.174885185 13507   0x7f980221e0 DEBUG                 queue2 gstqueue2.c:3579:gst_queue2_get_range:<queue2-0> Getting range: offset 5289256, length 128
+0:00:00.174961627 13507   0x7f980221e0 DEBUG                 queue2 gstqueue2.c:1556:gst_queue2_create_read:<queue2-0> Reading 128 bytes from 5289256
+0:00:00.174985294 13507   0x7f980221e0 DEBUG                 queue2 gstqueue2.c:1420:gst_queue2_have_data:<queue2-0> looking for offset 5289256, len 128
+0:00:00.175006534 13507   0x7f980221e0 DEBUG                 queue2 gstqueue2.c:649:find_range:<queue2-0> no range for 5289256
+0:00:00.175027497 13507   0x7f980221e0 INFO                  queue2 gstqueue2.c:1448:gst_queue2_have_data:<queue2-0> not found in any range off 5289256 len 128
+0:00:00.175055385 13507   0x7f980221e0 DEBUG                 queue2 gstqueue2.c:609:debug_ranges:<queue2-0> range [0-204800] (rb [0-204800]), reading 4096 current range? **y**
+0:00:00.175077329 13507   0x7f980221e0 DEBUG                 queue2 gstqueue2.c:1374:perform_seek_to_offset:<queue2-0> Seeking to 5289256
+0:00:00.175337527 13507   0x55bed428d0 DEBUG                 queue2 gstqueue2.c:3752:gst_queue2_src_activate_pull:<queue2-0> deactivating pull mode
+0:00:00.175538727 13507   0x7f980221e0 DEBUG                 queue2 gstqueue2.c:674:add_range:<queue2-0> find range for 5289256
+0:00:00.178081379 13507   0x7f980221e0 DEBUG                 queue2 gstqueue2.c:649:find_range:<queue2-0> no range for 5289256
+0:00:00.178178599 13507   0x7f980221e0 DEBUG                 queue2 gstqueue2.c:686:add_range:<queue2-0> new range 5289256-5289256
+0:00:00.178279597 13507   0x7f980221e0 DEBUG                 queue2 gstqueue2.c:609:debug_ranges:<queue2-0> range [0-204800] (rb [0-204800]), reading 4096 current range? **y**
+0:00:00.178308133 13507   0x7f980221e0 DEBUG                 queue2 gstqueue2.c:609:debug_ranges:<queue2-0> range [5289256-5289256] (rb [204800-204800]), reading 5289256 current range?   n  
+0:00:00.178333133 13507   0x7f980221e0 DEBUG                 queue2 gstqueue2.c:1578:gst_queue2_create_read:<queue2-0> reading 5289256, writing 5289256, level 0, max 5242880
+0:00:00.178358021 13507   0x7f980221e0 DEBUG                 queue2 gstqueue2.c:1606:gst_queue2_create_read:<queue2-0> update current position [5289256-5289256]
+0:00:00.178378613 13507   0x7f980221e0 DEBUG                 queue2 gstqueue2.c:1354:update_cur_pos:<queue2-0> updating max_reading_pos from 5289256 to 5289256
+0:00:00.178420038 13507   0x7f980221e0 DEBUG                 queue2 gstqueue2.c:1300:update_in_rates:<queue2-0> rates: in 0.000000, time 0:00:00.000000000
+0:00:00.178460889 13507   0x7f980221e0 LOG                   queue2 gstqueue2.c:1033:get_buffering_level:<queue2-0> Cur level bytes/time/rate-time/buffers 0/0:00:00.000000000/0:00:00.000000000/0
+0:00:00.178487574 13507   0x7f980221e0 DEBUG                 queue2 gstqueue2.c:1071:get_buffering_level:<queue2-0> buffering 1, level 0
+0:00:00.178507537 13507   0x7f980221e0 DEBUG                 queue2 gstqueue2.c:1210:update_buffering:<queue2-0> buffering 0 percent
+0:00:00.178525795 13507   0x7f980221e0 DEBUG                 queue2 gstqueue2.c:1616:gst_queue2_create_read:<queue2-0> waiting for add
+0:00:00.178606646 13507   0x7f980086a0 DEBUG                 queue2 gstqueue2.c:1300:update_in_rates:<queue2-0> rates: in 0.000000, time 0:00:00.000000000
+0:00:00.178646348 13507   0x7f980086a0 LOG                   queue2 gstqueue2.c:1033:get_buffering_level:<queue2-0> Cur level bytes/time/rate-time/buffers 0/0:00:00.000000000/0:00:00.000000000/0
+0:00:00.178668515 13507   0x7f980086a0 DEBUG                 queue2 gstqueue2.c:1071:get_buffering_level:<queue2-0> buffering 1, level 0
+0:00:00.178689181 13507   0x7f980086a0 DEBUG                 queue2 gstqueue2.c:1148:gst_queue2_get_buffering_message:<queue2-0> Going to post buffering: 0%
+0:00:00.178790920 13507   0x7f980086a0 DEBUG                 queue2 gstqueue2.c:1181:gst_queue2_post_buffering:<queue2-0> successfully posted 0% buffering message
+0:00:00.178826697 13507   0x7f980086a0 DEBUG                 queue2 gstqueue2.c:1300:update_in_rates:<queue2-0> rates: in 0.000000, time 0:00:00.000000000
+0:00:00.178854196 13507   0x7f980086a0 LOG                   queue2 gstqueue2.c:1033:get_buffering_level:<queue2-0> Cur level bytes/time/rate-time/buffers 0/0:00:00.000000000/0:00:00.000000000/0
+0:00:00.178875381 13507   0x7f980086a0 DEBUG                 queue2 gstqueue2.c:1071:get_buffering_level:<queue2-0> buffering 1, level 0
+0:00:00.178905084 13507   0x7f980086a0 DEBUG                 queue2 gstqueue2.c:1300:update_in_rates:<queue2-0> rates: in 0.000000, time 0:00:00.000000000
+0:00:00.178930065 13507   0x7f980086a0 LOG                   queue2 gstqueue2.c:1033:get_buffering_level:<queue2-0> Cur level bytes/time/rate-time/buffers 0/0:00:00.000000000/0:00:00.000000000/0
+0:00:00.178948768 13507   0x7f980086a0 DEBUG                 queue2 gstqueue2.c:1071:get_buffering_level:<queue2-0> buffering 1, level 0
+0:00:00.178975027 13507   0x7f980086a0 DEBUG                 queue2 gstqueue2.c:1300:update_in_rates:<queue2-0> rates: in 0.000000, time 0:00:00.000000000
+0:00:00.179027581 13507   0x7f980086a0 LOG                   queue2 gstqueue2.c:1033:get_buffering_level:<queue2-0> Cur level bytes/time/rate-time/buffers 0/0:00:00.000000000/0:00:00.000000000/0
+0:00:00.179074710 13507   0x7f980086a0 DEBUG                 queue2 gstqueue2.c:1071:get_buffering_level:<queue2-0> buffering 1, level 0
+0:00:00.182656692 13507   0x55bed11c00 DEBUG                 queue2 gstqueue2.c:2744:gst_queue2_handle_sink_event:<queue2-0> refusing event, we are flushing
+0:00:00.183046351 13507   0x55bed11c00 DEBUG                 queue2 gstqueue2.c:2744:gst_queue2_handle_sink_event:<queue2-0> refusing event, we are flushing
+0:00:00.183098535 13507   0x55bed11c00 DEBUG                 queue2 gstqueue2.c:2744:gst_queue2_handle_sink_event:<queue2-0> refusing event, we are flushing

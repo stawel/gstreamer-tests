@@ -1,0 +1,160 @@
+[main] pi@raspberrypi:~/gstreamer/gstreamer/builddir $ gdb /home/pi/gstreamer/gstreamer/builddir/subprojects/gstreamer/tools/gst-launch-1.0 -p 13507
+GNU gdb (Debian 10.1-1.7) 10.1.90.20210103-git
+Copyright (C) 2021 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "aarch64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<https://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from /home/pi/gstreamer/gstreamer/builddir/subprojects/gstreamer/tools/gst-launch-1.0...
+Attaching to program: /home/pi/gstreamer/gstreamer/builddir/subprojects/gstreamer/tools/gst-launch-1.0, process 13507
+[New LWP 13509]
+[New LWP 13510]
+[New LWP 13511]
+[New LWP 13513]
+[New LWP 13517]
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/aarch64-linux-gnu/libthread_db.so.1".
+__lll_lock_wait (futex=futex@entry=0x7f90012200, private=0) at lowlevellock.c:52
+52	lowlevellock.c: No such file or directory.
+warning: File "/home/pi/gstreamer/gstreamer/builddir/subprojects/glib/glib/libglib-2.0.so.0.7000.5-gdb.py" auto-loading has been declined by your `auto-load safe-path' set to "$debugdir:$datadir/auto-load".
+To enable execution of this file add
+	add-auto-load-safe-path /home/pi/gstreamer/gstreamer/builddir/subprojects/glib/glib/libglib-2.0.so.0.7000.5-gdb.py
+line to your configuration file "/home/pi/.gdbinit".
+To completely disable this security protection add
+	set auto-load safe-path /
+line to your configuration file "/home/pi/.gdbinit".
+For more information about this security protection see the
+"Auto-loading safe path" section in the GDB manual.  E.g., run from the shell:
+	info "(gdb)Auto-loading safe path"
+warning: File "/home/pi/gstreamer/gstreamer/builddir/subprojects/glib/gobject/libgobject-2.0.so.0.7000.5-gdb.py" auto-loading has been declined by your `auto-load safe-path' set to "$debugdir:$datadir/auto-load".
+(gdb) thread apply all where
+
+Thread 6 (Thread 0x7f877fe1c0 (LWP 13517) "id3demux0:sink"):
+#0  syscall () at ../sysdeps/unix/sysv/linux/aarch64/syscall.S:38
+#1  0x0000007fa14924b0 in g_cond_wait (cond=cond@entry=0x7f90042378, mutex=mutex@entry=0x7f90042368) at ../subprojects/glib/glib/gthread-posix.c:1575
+#2  0x0000007fa0861614 in gst_queue2_create_read (queue=queue@entry=0x7f90042040, offset=offset@entry=5289256, length=<optimized out>, length@entry=128, buffer=buffer@entry=0x7f877fcfb0) at ../subprojects/gstreamer/plugins/elements/gstqueue2.c:1617
+#3  0x0000007fa08624f8 in gst_queue2_get_range (pad=<optimized out>, parent=0x7f90042040, offset=5289256, length=128, buffer=0x7f877fcfb0) at ../subprojects/gstreamer/plugins/elements/gstqueue2.c:3602
+#4  0x0000007fa12a9530 in gst_pad_get_range_unchecked (pad=pad@entry=0x55bed21600, offset=offset@entry=5289256, size=size@entry=128, buffer=buffer@entry=0x7f877fd060) at ../subprojects/gstreamer/gst/gstpad.c:4935
+#5  0x0000007fa12b0eac in gst_pad_pull_range (pad=pad@entry=0x55bed16a90, offset=offset@entry=5289256, size=size@entry=128, buffer=buffer@entry=0x7f877fd160) at ../subprojects/gstreamer/gst/gstpad.c:5180
+#6  0x0000007fa1292310 in gst_proxy_pad_getrange_default (pad=<optimized out>, parent=<optimized out>, offset=5289256, size=128, buffer=0x7f877fd160) at ../subprojects/gstreamer/gst/gstghostpad.c:185
+#7  0x0000007fa12a9530 in gst_pad_get_range_unchecked (pad=pad@entry=0x55bed0ca20, offset=offset@entry=5289256, size=size@entry=128, buffer=buffer@entry=0x7f877fd210) at ../subprojects/gstreamer/gst/gstpad.c:4935
+#8  0x0000007fa12b0eac in gst_pad_pull_range (pad=pad@entry=0x55bed0c060, offset=offset@entry=5289256, size=size@entry=128, buffer=buffer@entry=0x7f877fd310) at ../subprojects/gstreamer/gst/gstpad.c:5180
+#9  0x0000007fa1292310 in gst_proxy_pad_getrange_default (pad=<optimized out>, parent=<optimized out>, offset=5289256, size=128, buffer=0x7f877fd310) at ../subprojects/gstreamer/gst/gstghostpad.c:185
+#10 0x0000007fa12a9530 in gst_pad_get_range_unchecked (pad=pad@entry=0x55bed16370, offset=offset@entry=5289256, size=size@entry=128, buffer=buffer@entry=0x7f877fd3c0) at ../subprojects/gstreamer/gst/gstpad.c:4935
+#11 0x0000007fa12b0eac in gst_pad_pull_range (pad=pad@entry=0x55bed0cc90, offset=offset@entry=5289256, size=size@entry=128, buffer=buffer@entry=0x7f877fd4c0) at ../subprojects/gstreamer/gst/gstpad.c:5180
+#12 0x0000007fa1292310 in gst_proxy_pad_getrange_default (pad=<optimized out>, parent=<optimized out>, offset=5289256, size=128, buffer=0x7f877fd4c0) at ../subprojects/gstreamer/gst/gstghostpad.c:185
+#13 0x0000007fa12a9530 in gst_pad_get_range_unchecked (pad=pad@entry=0x55bed16cf0, offset=offset@entry=5289256, size=size@entry=128, buffer=buffer@entry=0x7f877fd570) at ../subprojects/gstreamer/gst/gstpad.c:4935
+#14 0x0000007fa12b0eac in gst_pad_pull_range (pad=0x55bed21850, offset=5289256, size=128, buffer=0x7f877fd640) at ../subprojects/gstreamer/gst/gstpad.c:5180
+#15 0x0000007fa12a9530 in gst_pad_get_range_unchecked (pad=pad@entry=0x55bed21aa0, offset=offset@entry=5289256, size=size@entry=128, buffer=buffer@entry=0x7f877fd6f0) at ../subprojects/gstreamer/gst/gstpad.c:4935
+#16 0x0000007fa12b0eac in gst_pad_pull_range (pad=0x55bed21cf0, offset=offset@entry=5289256, size=128, buffer=buffer@entry=0x7f877fd7e8) at ../subprojects/gstreamer/gst/gstpad.c:5180
+#17 0x0000007fa0a1cbdc in gst_tag_demux_pull_end_tag (tags=<synthetic pointer>, demux=0x7f90048a20) at ../subprojects/gst-plugins-base/gst-libs/gst/tag/gsttagdemux.c:1078
+#18 gst_tag_demux_element_find (demux=0x7f90048a20) at ../subprojects/gst-plugins-base/gst-libs/gst/tag/gsttagdemux.c:1337
+#19 0x0000007fa0a1dae4 in gst_tag_demux_element_loop (demux=0x7f90048a20) at ../subprojects/gst-plugins-base/gst-libs/gst/tag/gsttagdemux.c:1457
+#20 0x0000007fa12e4044 in gst_task_func (task=0x7f9000e3b0) at ../subprojects/gstreamer/gst/gsttask.c:384
+#21 0x0000007fa1469f28 in g_thread_pool_thread_proxy (data=<optimized out>) at ../subprojects/glib/glib/gthreadpool.c:354
+#22 0x0000007fa14694b4 in g_thread_proxy (data=0x7f980221e0) at ../subprojects/glib/glib/gthread.c:827
+#23 0x0000007fa106a628 in start_thread (arg=0x7f877fdac0) at pthread_create.c:477
+#24 0x0000007fa116901c in thread_start () at ../sysdeps/unix/sysv/linux/aarch64/clone.S:78
+
+Thread 5 (Thread 0x7f9d5be1c0 (LWP 13513) "typefind:sink"):
+#0  syscall () at ../sysdeps/unix/sysv/linux/aarch64/syscall.S:38
+#1  0x0000007fa14924b0 in g_cond_wait (cond=cond@entry=0x55bed43f50, mutex=mutex@entry=0x55bed43f08) at ../subprojects/glib/glib/gthread-posix.c:1575
+#2  0x0000007fa12e41ec in gst_task_func (task=0x55bed43ef0) at ../subprojects/gstreamer/gst/gsttask.c:369
+#3  0x0000007fa1469f28 in g_thread_pool_thread_proxy (data=<optimized out>) at ../subprojects/glib/glib/gthreadpool.c:354
+#4  0x0000007fa14694b4 in g_thread_proxy (data=0x7f98008520) at ../subprojects/glib/glib/gthread.c:827
+#5  0x0000007fa106a628 in start_thread (arg=0x7f9d5bdac0) at pthread_create.c:477
+#6  0x0000007fa116901c in thread_start () at ../sysdeps/unix/sysv/linux/aarch64/clone.S:78
+
+Thread 4 (Thread 0x7f9f1ed1c0 (LWP 13511) "gmain"):
+#0  0x0000007fa115f2f4 in __GI___poll (fds=0x55bed47b90, nfds=1, timeout=<optimized out>) at ../sysdeps/unix/sysv/linux/poll.c:41
+#1  0x0000007fa1440178 in g_main_context_poll (priority=<optimized out>, n_fds=1, fds=0x55bed47b90, timeout=<optimized out>, context=0x55bed48600) at ../subprojects/glib/glib/gmain.c:4478
+#2  g_main_context_iterate (context=context@entry=0x55bed48600, block=block@entry=1, dispatch=dispatch@entry=1, self=<optimized out>) at ../subprojects/glib/glib/gmain.c:4170
+#3  0x0000007fa1440294 in g_main_context_iteration (context=0x55bed48600, may_block=may_block@entry=1) at ../subprojects/glib/glib/gmain.c:4240
+#4  0x0000007fa14402ec in glib_worker_main (data=<optimized out>) at ../subprojects/glib/glib/gmain.c:6140
+#5  0x0000007fa14694b4 in g_thread_proxy (data=0x55bed11cc0) at ../subprojects/glib/glib/gthread.c:827
+#6  0x0000007fa106a628 in start_thread (arg=0x7f9f1ecac0) at pthread_create.c:477
+#7  0x0000007fa116901c in thread_start () at ../sysdeps/unix/sysv/linux/aarch64/clone.S:78
+
+Thread 3 (Thread 0x7f9f9ee1c0 (LWP 13510) "souphttpsrc0:sr"):
+#0  syscall () at ../sysdeps/unix/sysv/linux/aarch64/syscall.S:38
+#1  0x0000007fa14924b0 in g_cond_wait (cond=cond@entry=0x55bed431d0, mutex=mutex@entry=0x55bed43188) at ../subprojects/glib/glib/gthread-posix.c:1575
+#2  0x0000007fa12e41ec in gst_task_func (task=0x55bed43170) at ../subprojects/gstreamer/gst/gsttask.c:369
+#3  0x0000007fa1469f28 in g_thread_pool_thread_proxy (data=<optimized out>) at ../subprojects/glib/glib/gthreadpool.c:354
+#4  0x0000007fa14694b4 in g_thread_proxy (data=0x55bed11c00) at ../subprojects/glib/glib/gthread.c:827
+#5  0x0000007fa106a628 in start_thread (arg=0x7f9f9edac0) at pthread_create.c:477
+#6  0x0000007fa116901c in thread_start () at ../sysdeps/unix/sysv/linux/aarch64/clone.S:78
+
+Thread 2 (Thread 0x7fa01ef1c0 (LWP 13509) "gst-launch-1.0"):
+--Type <RET> for more, q to quit, c to continue without paging--c
+#0  0x0000007fa115f2f4 in __GI___poll (fds=0x7f9800d510, nfds=1, timeout=<optimized out>) at ../sysdeps/unix/sysv/linux/poll.c:41
+#1  0x0000007fa1440178 in g_main_context_poll (priority=<optimized out>, n_fds=1, fds=0x7f9800d510, timeout=<optimized out>, context=0x55bed450a0) at ../subprojects/glib/glib/gmain.c:4478
+#2  g_main_context_iterate (context=0x55bed450a0, block=block@entry=1, dispatch=dispatch@entry=1, self=<optimized out>) at ../subprojects/glib/glib/gmain.c:4170
+#3  0x0000007fa144051c in g_main_loop_run (loop=0x55bed45160) at ../subprojects/glib/glib/gmain.c:4373
+#4  0x0000007fa07a3e18 in thread_func (user_data=0x55bed3e8f0) at ../subprojects/gst-plugins-good/ext/soup/gstsouphttpsrc.c:1065
+#5  0x0000007fa14694b4 in g_thread_proxy (data=0x55bed11b00) at ../subprojects/glib/glib/gthread.c:827
+#6  0x0000007fa106a628 in start_thread (arg=0x7fa01eeac0) at pthread_create.c:477
+#7  0x0000007fa116901c in thread_start () at ../sysdeps/unix/sysv/linux/aarch64/clone.S:78
+
+Thread 1 (Thread 0x7fa158c040 (LWP 13507) "gst-launch-1.0"):
+#0  __lll_lock_wait (futex=futex@entry=0x7f90012200, private=0) at lowlevellock.c:52
+#1  0x0000007fa106cd14 in __GI___pthread_mutex_lock (mutex=0x7f90012200) at pthread_mutex_lock.c:115
+#2  0x0000007fa12aca54 in post_activate (new_mode=GST_PAD_MODE_NONE, pad=0x55bed21600) at ../subprojects/gstreamer/gst/gstpad.c:1042
+#3  activate_mode_internal (pad=pad@entry=0x55bed21600, parent=parent@entry=0x7f90042040, mode=mode@entry=GST_PAD_MODE_PULL, active=active@entry=0) at ../subprojects/gstreamer/gst/gstpad.c:1220
+#4  0x0000007fa12ad36c in gst_pad_activate_mode (pad=pad@entry=0x55bed21600, mode=mode@entry=GST_PAD_MODE_PULL, active=active@entry=0) at ../subprojects/gstreamer/gst/gstpad.c:1318
+#5  0x0000007fa12acb98 in activate_mode_internal (pad=pad@entry=0x55bed16a90, parent=parent@entry=0x55bed0ca20, mode=mode@entry=GST_PAD_MODE_PULL, active=active@entry=0) at ../subprojects/gstreamer/gst/gstpad.c:1181
+#6  0x0000007fa12ad36c in gst_pad_activate_mode (pad=pad@entry=0x55bed16a90, mode=mode@entry=GST_PAD_MODE_PULL, active=active@entry=0) at ../subprojects/gstreamer/gst/gstpad.c:1318
+#7  0x0000007fa12924c4 in gst_ghost_pad_activate_pull_default (pad=0x55bed0ca20, parent=<optimized out>, active=0) at ../subprojects/gstreamer/gst/gstghostpad.c:393
+#8  0x0000007fa12ac924 in activate_mode_internal (pad=pad@entry=0x55bed0ca20, parent=parent@entry=0x55bed160e0, mode=mode@entry=GST_PAD_MODE_PULL, active=active@entry=0) at ../subprojects/gstreamer/gst/gstpad.c:1213
+#9  0x0000007fa12ad36c in gst_pad_activate_mode (pad=pad@entry=0x55bed0ca20, mode=mode@entry=GST_PAD_MODE_PULL, active=active@entry=0) at ../subprojects/gstreamer/gst/gstpad.c:1318
+#10 0x0000007fa12acb98 in activate_mode_internal (pad=pad@entry=0x55bed0c060, parent=parent@entry=0x55bed0a0f0, mode=mode@entry=GST_PAD_MODE_PULL, active=active@entry=0) at ../subprojects/gstreamer/gst/gstpad.c:1181
+#11 0x0000007fa12ad36c in gst_pad_activate_mode (pad=pad@entry=0x55bed0c060, mode=mode@entry=GST_PAD_MODE_PULL, active=active@entry=0) at ../subprojects/gstreamer/gst/gstpad.c:1318
+#12 0x0000007fa1292964 in gst_ghost_pad_internal_activate_pull_default (parent=<optimized out>, active=0, pad=0x55bed16370) at ../subprojects/gstreamer/gst/gstghostpad.c:302
+#13 gst_ghost_pad_internal_activate_mode_default (pad=0x55bed16370, parent=<optimized out>, mode=<optimized out>, active=0) at ../subprojects/gstreamer/gst/gstghostpad.c:344
+#14 0x0000007fa12ac924 in activate_mode_internal (pad=pad@entry=0x55bed16370, parent=parent@entry=0x55bed0c060, mode=mode@entry=GST_PAD_MODE_PULL, active=active@entry=0) at ../subprojects/gstreamer/gst/gstpad.c:1213
+#15 0x0000007fa12ad36c in gst_pad_activate_mode (pad=pad@entry=0x55bed16370, mode=mode@entry=GST_PAD_MODE_PULL, active=active@entry=0) at ../subprojects/gstreamer/gst/gstpad.c:1318
+#16 0x0000007fa12acb98 in activate_mode_internal (pad=pad@entry=0x55bed0cc90, parent=parent@entry=0x7f90048040, mode=mode@entry=GST_PAD_MODE_PULL, active=active@entry=0) at ../subprojects/gstreamer/gst/gstpad.c:1181
+#17 0x0000007fa12ad36c in gst_pad_activate_mode (pad=pad@entry=0x55bed0cc90, mode=mode@entry=GST_PAD_MODE_PULL, active=active@entry=0) at ../subprojects/gstreamer/gst/gstpad.c:1318
+#18 0x0000007fa1292964 in gst_ghost_pad_internal_activate_pull_default (parent=<optimized out>, active=0, pad=0x55bed16cf0) at ../subprojects/gstreamer/gst/gstghostpad.c:302
+#19 gst_ghost_pad_internal_activate_mode_default (pad=0x55bed16cf0, parent=<optimized out>, mode=<optimized out>, active=0) at ../subprojects/gstreamer/gst/gstghostpad.c:344
+#20 0x0000007fa12ac924 in activate_mode_internal (pad=pad@entry=0x55bed16cf0, parent=parent@entry=0x55bed0cc90, mode=mode@entry=GST_PAD_MODE_PULL, active=active@entry=0) at ../subprojects/gstreamer/gst/gstpad.c:1213
+#21 0x0000007fa12ad36c in gst_pad_activate_mode (pad=pad@entry=0x55bed16cf0, mode=mode@entry=GST_PAD_MODE_PULL, active=active@entry=0) at ../subprojects/gstreamer/gst/gstpad.c:1318
+#22 0x0000007fa12acb98 in activate_mode_internal (pad=pad@entry=0x55bed21850, parent=parent@entry=0x55bed41800, mode=mode@entry=GST_PAD_MODE_PULL, active=active@entry=0) at ../subprojects/gstreamer/gst/gstpad.c:1181
+#23 0x0000007fa12ad36c in gst_pad_activate_mode (pad=0x55bed21850, mode=GST_PAD_MODE_PULL, active=0) at ../subprojects/gstreamer/gst/gstpad.c:1318
+#24 0x0000007fa12ac924 in activate_mode_internal (pad=pad@entry=0x55bed21aa0, parent=parent@entry=0x55bed41800, mode=mode@entry=GST_PAD_MODE_PULL, active=active@entry=0) at ../subprojects/gstreamer/gst/gstpad.c:1213
+#25 0x0000007fa12ad36c in gst_pad_activate_mode (pad=pad@entry=0x55bed21aa0, mode=mode@entry=GST_PAD_MODE_PULL, active=active@entry=0) at ../subprojects/gstreamer/gst/gstpad.c:1318
+#26 0x0000007fa12acb98 in activate_mode_internal (pad=pad@entry=0x55bed21cf0, parent=parent@entry=0x7f90048a20, mode=mode@entry=GST_PAD_MODE_PULL, active=active@entry=0) at ../subprojects/gstreamer/gst/gstpad.c:1181
+#27 0x0000007fa12ad11c in gst_pad_set_active (pad=pad@entry=0x55bed21cf0, active=0) at ../subprojects/gstreamer/gst/gstpad.c:1111
+#28 0x0000007fa1282e1c in activate_pads (vpad=<optimized out>, ret=0x7fd3522c38, active=0x7fd3522c9c) at ../subprojects/gstreamer/gst/gstelement.c:3181
+#29 0x0000007fa129ae88 in gst_iterator_fold (it=it@entry=0x55becec530, func=func@entry=0x7fa1282df4 <activate_pads>, ret=ret@entry=0x7fd3522c38, user_data=user_data@entry=0x7fd3522c9c) at ../subprojects/gstreamer/gst/gstiterator.c:617
+#30 0x0000007fa12834c8 in iterator_activate_fold_with_resync (iter=iter@entry=0x55becec530, user_data=user_data@entry=0x7fd3522c9c, func=<optimized out>) at ../subprojects/gstreamer/gst/gstelement.c:3205
+#31 0x0000007fa1285b70 in gst_element_pads_activate (element=element@entry=0x7f90048a20, active=<optimized out>, active@entry=0) at ../subprojects/gstreamer/gst/gstelement.c:3249
+#32 0x0000007fa1285de8 in gst_element_change_state_func (element=0x7f90048a20, transition=<optimized out>) at ../subprojects/gstreamer/gst/gstelement.c:3315
+#33 0x0000007fa0a1fb5c in gst_tag_demux_change_state (element=0x7f90048a20, transition=GST_STATE_CHANGE_PAUSED_TO_READY) at ../subprojects/gst-plugins-base/gst-libs/gst/tag/gsttagdemux.c:1733
+#34 0x0000007fa128837c in gst_element_change_state (element=element@entry=0x7f90048a20, transition=transition@entry=GST_STATE_CHANGE_PAUSED_TO_READY) at ../subprojects/gstreamer/gst/gstelement.c:3093
+#35 0x0000007fa1288b24 in gst_element_set_state_func (element=0x7f90048a20, state=<optimized out>) at ../subprojects/gstreamer/gst/gstelement.c:3047
+#36 0x0000007fa1263354 in gst_bin_element_set_state (next=GST_STATE_READY, current=GST_STATE_PAUSED, start_time=0, base_time=0, element=0x7f90048a20, bin=0x7f90048040) at ../subprojects/gstreamer/gst/gstbin.c:2581
+#37 gst_bin_change_state_func (element=0x7f90048040, transition=GST_STATE_CHANGE_PAUSED_TO_READY) at ../subprojects/gstreamer/gst/gstbin.c:2923
+#38 0x0000007fa0c27bbc in gst_parse_bin_change_state (element=0x7f90048040, transition=<optimized out>) at ../subprojects/gst-plugins-base/gst/playback/gstparsebin.c:4391
+#39 0x0000007fa128837c in gst_element_change_state (element=element@entry=0x7f90048040, transition=transition@entry=GST_STATE_CHANGE_PAUSED_TO_READY) at ../subprojects/gstreamer/gst/gstelement.c:3093
+#40 0x0000007fa1288b24 in gst_element_set_state_func (element=0x7f90048040, state=<optimized out>) at ../subprojects/gstreamer/gst/gstelement.c:3047
+#41 0x0000007fa1263354 in gst_bin_element_set_state (next=GST_STATE_READY, current=GST_STATE_PAUSED, start_time=0, base_time=0, element=0x7f90048040, bin=0x55bed0a0f0) at ../subprojects/gstreamer/gst/gstbin.c:2581
+#42 gst_bin_change_state_func (element=0x55bed0a0f0, transition=GST_STATE_CHANGE_PAUSED_TO_READY) at ../subprojects/gstreamer/gst/gstbin.c:2923
+#43 0x0000007fa0c12a78 in gst_decodebin3_change_state (element=0x55bed0a0f0, transition=GST_STATE_CHANGE_PAUSED_TO_READY) at ../subprojects/gst-plugins-base/gst/playback/gstdecodebin3.c:3153
+#44 0x0000007fa128837c in gst_element_change_state (element=element@entry=0x55bed0a0f0, transition=transition@entry=GST_STATE_CHANGE_PAUSED_TO_READY) at ../subprojects/gstreamer/gst/gstelement.c:3093
+#45 0x0000007fa1288b24 in gst_element_set_state_func (element=0x55bed0a0f0, state=<optimized out>) at ../subprojects/gstreamer/gst/gstelement.c:3047
+#46 0x0000007fa1263354 in gst_bin_element_set_state (next=GST_STATE_READY, current=GST_STATE_PAUSED, start_time=0, base_time=0, element=0x55bed0a0f0, bin=0x55bed2a230) at ../subprojects/gstreamer/gst/gstbin.c:2581
+#47 gst_bin_change_state_func (element=0x55bed2a230, transition=GST_STATE_CHANGE_PAUSED_TO_READY) at ../subprojects/gstreamer/gst/gstbin.c:2923
+#48 0x0000007fa12b675c in gst_pipeline_change_state (element=0x55bed2a230, transition=GST_STATE_CHANGE_PAUSED_TO_READY) at ../subprojects/gstreamer/gst/gstpipeline.c:529
+#49 0x0000007fa128837c in gst_element_change_state (element=element@entry=0x55bed2a230, transition=transition@entry=GST_STATE_CHANGE_PAUSED_TO_READY) at ../subprojects/gstreamer/gst/gstelement.c:3093
+#50 0x0000007fa1288b24 in gst_element_set_state_func (element=0x55bed2a230, state=<optimized out>) at ../subprojects/gstreamer/gst/gstelement.c:3047
+#51 0x0000005582b73c24 in main (argc=<optimized out>, argv=<optimized out>) at ../subprojects/gstreamer/tools/gst-launch.c:1339
+(gdb) 
