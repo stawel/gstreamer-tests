@@ -5,8 +5,7 @@ Catch deadlock in gstreamers queue2 when activate_pull(..., false) is called
 
 # Setup
 
-- raspbery pi 400
-- Debian GNU/Linux 11 (bullseye), 64 bit version
+- raspbery pi 400 (Debian GNU/Linux 11 (bullseye), 64 bit version), Ubuntu 20.04 x86_64
 - gstreamer: 1.21.0 (GIT) branch: main (0151d621afbde1e267c64f2697da0146b72d7f6a), 1.18.3
 - build command line: meson builddir -Dgst-plugins-base:gl=disabled
 
@@ -30,3 +29,14 @@ Mon 22 Aug 2022 07:36:49 PM BST ............ Test: 91
 
 callstack: see gdb_deadlock.log
 full queue2 logs: see queue2.log
+
+
+
+
+# Reproduction on Ubuntu 20.04
+
+1. as above
+
+2. in terminal 2 run:
+[main] pi@raspberrypi:~/queue2_deactivate_pull_deadlock $ ./deadlock-quit-random.sh
+(reproduction time less 3 minuts)

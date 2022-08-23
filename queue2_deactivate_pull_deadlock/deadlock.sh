@@ -1,5 +1,7 @@
 #!/bin/bash
 
+#tested on raspbery pi 400
+
 URI=http://localhost:8000/file_example_MP3_5MG.mp3
 QUIT_TIME=0.14
 # QUIT_TIME may need adjustments
