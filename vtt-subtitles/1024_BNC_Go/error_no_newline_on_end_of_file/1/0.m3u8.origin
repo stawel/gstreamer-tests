@@ -1,0 +1,17 @@
+#EXTM3U
+#EXT-X-VERSION:7
+#EXT-X-TARGETDURATION:6
+#EXT-X-MEDIA-SEQUENCE:272675357
+#EXT-X-DISCONTINUITY-SEQUENCE:0
+#EXT-X-INDEPENDENT-SEGMENTS
+#EXT-X-PROGRAM-DATE-TIME:2021-11-23T17:23:09.150409Z
+#EXTINF:6.006, no desc
+https://didoc69s3kqdd.cloudfront.net/bpk-tv/BNC-OTT/default/BNC-OTT-audio_131652_eng=131600-video=488800-272675357.ts
+#EXTINF:6.006, no desc
+https://didoc69s3kqdd.cloudfront.net/bpk-tv/BNC-OTT/default/BNC-OTT-audio_131652_eng=131600-video=488800-272675358.ts
+#EXTINF:6.006, no desc
+https://didoc69s3kqdd.cloudfront.net/bpk-tv/BNC-OTT/default/BNC-OTT-audio_131652_eng=131600-video=488800-272675359.ts
+#EXTINF:6.006, no desc
+https://didoc69s3kqdd.cloudfront.net/bpk-tv/BNC-OTT/default/BNC-OTT-audio_131652_eng=131600-video=488800-272675360.ts
+#EXTINF:6.006, no desc
+https://didoc69s3kqdd.cloudfront.net/bpk-tv/BNC-OTT/default/BNC-OTT-audio_131652_eng=131600-video=488800-272675361.ts

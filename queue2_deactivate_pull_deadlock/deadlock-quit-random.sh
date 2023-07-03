@@ -17,10 +17,11 @@ QUIT_GAP=0.04
 
 
 
-for i in {1..1000}
+for i in {1..10000}
 do
     QUIT_TIME=$(python -c "import random ; print($QUIT_START+random.random()*$QUIT_GAP)")
     echo "$(date) ............ Test: $i  quit time: $QUIT_TIME"
     ( sleep $QUIT_TIME ; killall -2 gst-launch-1.0 ) &
-    GST_DEBUG=queue2:7 gst-launch-1.0 urisourcebin buffer-size=5242880 ring-buffer-max-size=20971520 uri=$URI ! decodebin3 ! audioconvert  ! autoaudiosink
+    #GST_DEBUG=queue2:7 
+    gst-launch-1.0 urisourcebin buffer-size=5242880 ring-buffer-max-size=20971520 uri=$URI ! decodebin3 ! audioconvert  ! autoaudiosink
 done

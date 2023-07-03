@@ -1,0 +1,31 @@
+
+Description:
+subparse ignores last subtitle if *.vtt doesn't have "\n" on end of file
+note: compare 1024_BNC_Go/error_no_newline_on_end_of_file/subtitles/*.vtt with 1024_BNC_Go/ok/subtitles/*.vtt
+
+
+Reproduction:
+in terminal 1 run:
+gstreamer-tests/vtt-subtitles/1024_BNC_Go/error_no_newline_on_end_of_file$ python3 -m http.server
+Serving HTTP on 0.0.0.0 port 8000 (http://0.0.0.0:8000/) ...
+
+in terminal 2 run:
+$ gst-play-1.0 http://localhost:8000/playlist.m3u8 --use-playbin3
+
+
+
+
+Expected subtitles:
+[TEST1] PURSUED AND THAT THE DEFENDANT\nGREGORY AND TRAVIS LIKE MICHAEL
+[TEST2] GREGORY AND TRAVIS LIKE MICHAEL\nWERE REALLY THE AGGRESSORS AND
+[TEST3] WERE REALLY THE AGGRESSORS AND\nTHAT WE UM BRIAN ALS
+[TEST4] PART AND BECAUSE EACH OF THEM\nPL
+[TEST5] ALTHOUGH TRAVIS MCMICHAEL FIRED\nTHE FATAL SHOTS HE SAID GEORGIA
+[TEST6] THE FATAL SHOTS HE SAID GEORGIA\nLAW MAKES HIS CELL THAT IS AS
+[TEST7 END] IF ALL THREE MEN HELD THE\nSHOTGUN THAT SHOT AND KILLED A
+
+Got subtitles:
+[TEST1] PURSUED AND THAT THE DEFENDANT\nGREGORY AND TRAVIS LIKE MICHAEL
+[TEST2] GREGORY AND TRAVIS LIKE MICHAEL\nWERE REALLY THE AGGRESSORS AND
+[TEST5] ALTHOUGH TRAVIS MCMICHAEL FIRED\nTHE FATAL SHOTS HE SAID GEORGIA
+[TEST7 END] IF ALL THREE MEN HELD THE\nSHOTGUN THAT SHOT AND KILLED A
