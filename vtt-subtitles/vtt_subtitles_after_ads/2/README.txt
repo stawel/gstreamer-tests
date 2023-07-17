@@ -3,11 +3,11 @@ Description:
 No subtitles after #EXT-X-DISCONTINUITY
 
 in terminal 1 run:
+$ cd gstreamer-tests/vtt-subtitles/vtt_subtitles_after_ads/2
 gstreamer-tests/vtt-subtitles/vtt_subtitles_after_ads/2$ python2 serve_http.py
 serving at port 8000
 
 in terminal 2 run:
-F=http://localhost:8000/subtitles/vtt_subtitles_after_ads/2/playlist.m3u8
 $ gst-play-1.0 http://localhost:8000/playlist.m3u8 --use-playbin3
 
 
