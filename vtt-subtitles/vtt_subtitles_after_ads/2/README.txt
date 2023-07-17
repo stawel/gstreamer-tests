@@ -1,7 +1,6 @@
 
 Description:
 No subtitles after #EXT-X-DISCONTINUITY
-(subtitles shifted??)
 
 in terminal 1 run:
 gstreamer-tests/vtt-subtitles/vtt_subtitles_after_ads/2$ python2 serve_http.py
